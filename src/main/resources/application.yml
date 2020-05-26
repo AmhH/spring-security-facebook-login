@@ -1,0 +1,25 @@
+#Github
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            clientId: github-client-id
+#            clientSecret: github-client-secret
+# ...
+
+#Facebook
+security:
+  oauth2:
+    client:
+      client-id: registerAndGetIt
+      client-secret: registerAndGetIt
+      access-token-uri: https://graph.facebook.com/oauth/access_token
+      user-authorization-uri: https://facebook.com/dialog/oauth
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:
+      user-info-uri: https://graph.facebook.com/me
+# ...
